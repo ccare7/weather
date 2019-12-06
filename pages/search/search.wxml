@@ -1,0 +1,12 @@
+<!--search/search.wxml-->
+<view class="show">
+    <input class="search" value="{{val}}" bindinput="sub" placeholder="请输入要搜索的城市名称"></input>
+    <view  bindtap="pos">
+      <image src="../../images/search.png"></image>
+    </view>
+    <view wx:for="{{basic}}" wx:key="{{index}}">
+        <view class="fulter">
+          <view bindtap="searchSuccess" data-city="{{item.cid}}" class="endup"><span>{{item.location}}</span>{{" --- "+item.parent_city}}</view>
+        </view>
+    </view>
+</view>

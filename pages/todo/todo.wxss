@@ -1,0 +1,37 @@
+/* pages/todo/todo.wxss */
+page{
+  padding: 0;
+  margin: 0;
+}
+.show{
+  margin: 20rpx 10rpx 10rpx;
+  background:#fff;
+  height: 250rpx;
+  border: 1px solid #f2f2f2;
+  border-radius: 10rpx;
+  padding-left: 50rpx;
+  box-shadow: 4rpx 4rpx 6rpx #666;
+  padding-top: 50rpx;
+  color: #666;
+}
+.sub{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subButton{
+  width: 100rpx;
+  height:100rpx;
+  border: 3rpx solid #666;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 50%;
+  font-weight: 550;
+  font-size: 38rpx;
+}
+.date{
+  font-size: 20rpx;
+  margin: 150rpx 20rpx 20rpx 380rpx;
+}

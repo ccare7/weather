@@ -1,0 +1,62 @@
+<view class="show">
+    <view class="showContent">
+      <!-- <cover-image src="{{img}}.png"></cover-image> -->
+      <image src="../../images/{{cond_code_d}}.png" class="showImg"></image>
+      <span class="mContent">{{daily_forecast[0].cond_txt_d}} {{now.parent_city}}</span>
+      <span class="area">{{now.location}}</span>
+      <view><image src="../../images/search.png" class="imagesY" bindtap="jup"></image></view>
+    </view>
+    <view class="sight">{{daily_forecast[0].tmp_min}}° / {{daily_forecast[0].tmp_max}}°</view>
+</view>
+<view class="target">
+  <view class="tag1" wx:for="{{daily_forecast}}" wx:key="{{index}}">
+    <view>{{item.date}}</view>
+    <view>{{item.cond_txt_d}}</view>
+  </view>
+</view>
+<view class="footer">
+<view class="fulter spc">
+      <view>未来3天的天气预报</view>
+    </view>
+    <view class="fulter api spc">
+      <view>时间</view>
+      <view>白天</view>
+      <view>夜间</view>
+      <view>气温</view>
+      <view>风向</view>
+    </view> 
+    <view class="fulter" wx:for="{{daily_forecast}}" wx:key="{{index}}">
+        <view class="cont">
+          <view wx:if="{{index == 0}}"> 今天 </view>
+          <view wx:elif="{{index == 1}}"> 明天 </view>
+          <view wx:else> 明天 </view>
+          <view>
+            <image src="../../images/{{item.cond_code_d}}.png"></image>
+          </view>
+          <view>
+            <image src="../../images/{{item.cond_code_n}}.png"></image>
+          </view>
+          <view>{{item.tmp_min}}°/{{item.tmp_max}}°</view>
+          <view>{{item.wind_dir}}</view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="fulter spc">
+      <view>未来24小时的天气预报</view>
+    </view>
+    <view class="fulter api spc">
+      <view>时间</view>
+      <view>白天</view>
+      <view>气温</view>
+      <view>风向</view>
+    </view>  
+    <view class="cont hourly"  wx:for="{{hourly}}" wx:key="{{index}}">
+          <view class="time">{{item.time}}</view>
+          <view>
+            <image src="../../images/{{item.cond_code}}.png"></image>
+          </view>
+          <view>{{item.tmp}}°</view>
+          <view>{{item.wind_dir}}</view>
+        </view>
+</view>

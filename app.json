@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/weather/weather",
+    "pages/todo/todo",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/edit/edit"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请允许小程序访问您的地理位置"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天气",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#76afff",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "iconPath": "images/weather.png",
+        "selectedIconPath": "images/weather_active.png"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "待办事项",
+        "iconPath": "images/todo.png",
+        "selectedIconPath": "images/todo_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,10 @@
+<!--pages/edit/edit.wxml-->
+<view class="show">
+  <view>
+    <textarea value="{{val}}" bindinput="hadlein"></textarea>
+    <view class="submit">
+      <view class="button" bindtap="del">提交</view>
+    </view>
+  </view> 
+</view>
+

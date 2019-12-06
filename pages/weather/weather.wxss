@@ -1,0 +1,126 @@
+/* pages/weather/weather.wxss */
+page{
+  font-family: "微软雅黑";
+  letter-spacing: 2rpx;
+  font-weight: 500;
+}
+.show{
+  margin: 20rpx 10rpx 10rpx;
+  background:#fff;
+  height: 350rpx;
+  border: 1px solid #f2f2f2;
+  border-radius: 10rpx;
+  padding-left: 50rpx;
+  box-shadow: 4rpx 4rpx 6rpx #666;
+}
+.showContent{
+  width: 100%;
+  height: 130rpx;
+  margin-top: 50rpx;
+  font-size: 48rpx;
+  font-weight: 600;
+  color: #79adff;
+}
+.showImg{
+  width: 130rpx;
+  height: 130rpx;
+}
+.sight{
+  width: 100%;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  color: #999;
+}
+.target{
+  display: flex;
+  flex-direction: between;
+  font-size: 32rpx;
+  text-align: center;
+}
+.tag1{
+  margin: 0rpx 10rpx;
+  background:#fff;
+  width: 250rpx;
+  height: 150rpx;
+  border: 1px solid #f4f4f4;
+  border-radius: 10rpx;
+  padding-top: 70rpx;
+  font-weight: 600rpx;
+  box-shadow: 4rpx 4rpx 6rpx #666;
+}
+.tag1 view{
+  margin: 10rpx;
+}
+.content{
+  margin-top: 20rpx;
+}
+.footer{
+  margin: 10rpx;
+  background:#fff;
+  height: auto;
+  border: 1px solid #f2f2f2;
+  border-radius: 10rpx;
+  padding: 0rpx 50rpx;
+  font-size: 32rpx;
+  box-shadow: 4rpx 4rpx 6rpx #666;
+}
+.title{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #f4f4f4;
+  margin-bottom:20rpx;
+}
+.area{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.mContent{
+  margin-left: 50rpx;
+}
+.fulter{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #999;
+  display: flex;
+  align-items: center;
+  flex-direction: between;
+}
+.fulter view{
+  height: auto;
+}
+.api view{
+  width: 30%;
+  text-align: center;
+}
+.cont{
+  width: 100%;
+  display: flex;
+  flex-direction: between;
+  align-items: center;
+}
+.cont view{
+  width: 220rpx;
+  text-align: center;
+}
+.cont image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.imagesY{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 70rpx;
+  top:80rpx;
+  z-index: 123
+}
+.spc{
+  font-size: 30rpx;
+  color: #999;
+}
+.time{
+  font-size: 25rpx;
+}
+.hourly{
+  border-bottom: 1px solid #999;
+}

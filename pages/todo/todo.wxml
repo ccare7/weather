@@ -1,0 +1,17 @@
+<!--pages/todo/todo.wxml-->
+<view wx:for="{{data}}" wx:key="{{index}}">
+  <navigator url="../edit/edit?index={{index}}">
+      <view class="show" bindtap="update" data-ine="{{index}}">
+    <view>
+      {{item.note}}
+    </view>
+    <view class="date">
+    {{item.time}}
+    </view>
+  </view> 
+  </navigator>
+
+</view>
+<view class="sub">
+  <view class="subButton" bindtap="click">+</view>
+</view>
